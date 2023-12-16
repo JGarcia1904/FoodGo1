@@ -1,0 +1,3 @@
+Barquisimeto-Centro;40
+Cabudare-Parroquia Agua Viva;32
+Barquisimeto-Este;28

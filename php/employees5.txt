@@ -1,0 +1,5 @@
+Urb. El Palmar;40
+Urb. Las Mercedes;35
+Urb. El Paraiso;32
+Urb. La Puerta;28
+Urb. La Mata;25

@@ -1,0 +1,5 @@
+Urb. Santa Eduvigis;32
+Urb. Pueblo Nuevo;25
+Urb. La Concordia; 22
+Urb. Santa Elena;20
+Urb. Cuesta Lara;16

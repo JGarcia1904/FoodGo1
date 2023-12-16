@@ -1,0 +1,5 @@
+loki;25
+alejandro;19
+pedro;15
+sonia;12
+pablito;9
