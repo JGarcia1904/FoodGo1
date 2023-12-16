@@ -1,0 +1,151 @@
+@import url('https: //fonts.googleapis.com/css2?family=Noto+Sans+JP: wght@300&display=swap');
+
+html{
+font-size: 62.5%;
+box-sizing: border-box;
+}
+
+*, *::before, *::after{
+box-sizing: inherit;
+}
+body{
+padding: 0;
+margin: 0;
+line-height: 1.6;
+font-family: 'Noto Sans JP', sans-serif;
+background-size: cover;
+}
+.logo{
+width: 120px;
+height: 60px;
+}
+
+nav{
+display: flex;
+align-items: center;
+justify-content: space-around;
+min-height: 8vh;
+background-color: #07070b;
+}
+.ham{
+display: none;
+cursor: pointer;
+margin: 0;
+padding: 0;
+background-color: transparent;
+}
+.ham span{
+display: block;
+background-color: #f3f3f3;
+height: 3px;
+width: 28px;
+margin: 10px auto;
+}
+
+.enlaces-menu{
+display: flex;
+padding: 0;
+}
+.enlaces-menu li{
+padding: 0 40px;
+list-style-type: none;
+transition: 0.3s;
+}
+.enlaces-menu li a{
+text-decoration: none;
+font-size: 1.8rem;
+color: #f3f3f3;
+font-weight: 600;
+}
+.enlaces-menu li:hover{
+background-color: rgb(175, 129, 253);
+}
+
+/*slider*/
+
+.slider{
+width: 100%;
+height: 100vh;
+background: #bbbdc0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.swiper{
+	width: 80%;
+	height: fit-content;
+}
+
+.swiper-slide{
+	width: fit-content;
+}
+
+.swiper-slide img{
+	width: 100%;
+}
+
+.swiper .swiper-button-prev{
+	color: #3515ff;
+}
+.swiper .swiper-button-next{
+	color: #3515ff;
+}
+
+.swiper .swiper-pagination-bullet-active{
+	background: #ee8888;
+}
+
+/* parte del telefono */
+
+@media (max-width: 768px){
+	body{
+overflow: hidden;
+}
+.logo{
+padding-left:25px;
+}
+.ham{
+display: block;
+position: absolute;
+top: 15px;
+right: 25px;
+}
+
+nav{
+
+flex-direction: column;
+align-items: flex-start;
+padding: 25px 0;
+}
+
+.enlaces-menu{
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+height: 92vh;
+margin: 0;
+padding: 0;
+width: 100%;
+display: none;
+opacity: 0;
+}
+.enlaces-menu li{
+width: 100%;
+text-align: center;
+padding: 20px;
+}
+
+@keyframes muestraMenu{
+from{opacity: 0;}
+to{opacity: 1;}
+
+
+}
+
+
+.enlaces-menu.activado{
+display: flex;
+}
+
+}
